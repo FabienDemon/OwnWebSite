@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,500&display=swap');
+
+.header{
+    margin: 0;
+
+}
+
+header{
+    width: 100%;
+    background-color: var(--bg-black-100);
+    background-image: url("https://www.transparenttextures.com/patterns/wave-grid.png");
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+header img{
+    position: absolute;
+    z-index: 1;
+    grid-column: 1;
+    height: 75%;
+}
+
+header ul {
+    position: absolute;
+    z-index: 3;
+    grid-column: 1;
+    width: 45%;
+    height: 8%;
+    background: var(--bg-black-900);
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+header ul a{
+
+    color: var(--text-black-900);
+    font-family: Montserrat;
+    font-size: 120%;
+    padding: 2%;
+}
+header ul a i{
+    padding-right: 1%;
+}
+
+header ul a:hover{
+    border-bottom: 3px solid var(--skin-color);
+}
+
+header .text{
+    grid-column: 2;
+    width: 100%;
+    z-index: 3;
+    text-align: left;
+    height: 75%;
+}
+header .text .hi{
+    font-size: 300%;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-black-900);
+    margin-top: 40%;
+    margin-left: 20%;
+}
+header .text .profession{
+    font-family: Montserrat;
+    font-size: 110%;
+    width: 48%;
+    background: var(--skin-color);
+    padding: 2%;
+    margin-left: 30%;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.65);
+    color: var(--bg-black-900);
+}

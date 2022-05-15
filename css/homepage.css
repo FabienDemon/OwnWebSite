@@ -9,7 +9,7 @@
 }
 body.dark{
     --bg-black-900: #151515;
-    --bg-black-100:#222222;
+    --bg-black-100: #313336;
     --bg-black-50:#393939;
     --text-black-900:#ffffff;
     --text-black-700:#e9e9e9;
@@ -31,51 +31,3 @@ body{
     box-sizing: border-box;
 }
 
-::before,::after{
-    box-sizing: border-box;
-}
-section {
-    background: var(--bg-black-900);
-    min-height: 100vh;
-    display: block;
-    position: fixed;
-    left: 15%;
-    top: 0;
-    right: 0;
-    z-index: 0;
-    opacity: 1;
-}
-.aside{
-    width: 15%;
-    height: 100%;
-    background: var(--bg-black-100);
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
-
-.aside .logo{
-    position: absolute;
-    top: 5%;
-    font-size: 200%;
-    text-transform: capitalize;
-}
-.aside .logo a {
-    color: var(--text-black-900);
-    font-weight: 700;
-    padding: 5% 15%;
-    letter-spacing: 2px;
-}
-.D{
-    transform:rotateY(90deg);
-}
-.aside .logo a span{
-    font-size: 150%;
-}
-.home-section{
-  color: var(--skin-color);
-}
