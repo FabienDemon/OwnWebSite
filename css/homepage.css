@@ -8,7 +8,7 @@
     --text-black-700: #333249;
 }
 body.dark{
-    --bg-black-900: #151515;
+    --bg-black-900: #262626;
     --bg-black-100: #313336;
     --bg-black-50:#393939;
     --text-black-900:#e9e9e9;
@@ -31,101 +31,80 @@ body{
     text-decoration: none;
     box-sizing: border-box;
 }
+.body{
+    margin-top: 50%;
+}
+html {
+    scroll-behavior: smooth;
+}
 .about{
-    margin-top: 2%;
-    display: grid;
-    grid-template-rows: 45% 20% 150% 100%;
-    grid-row-gap: 30%;
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
     }
 .about h1{
-    grid-row: 1/2;
-    grid-column: 1/3;
     width: 75%;
     margin-left: 5%;
     color: var(--text-black-700);
-    font-size: 200%;
+    font-size: 300%;
     border-bottom: 5px solid var(--skin-color);
+    margin-bottom: 2%;
 }
 
 .about pre{
-    grid-column: 1/3;
-    grid-row: 2/3;
-    font-size: 100%;
+    width: 100%;
+    font-size: 150%;
     font-family: "sans-serif";
     margin-left: 5%;
     color: var(--text-black-900);
 }
 
-.CV{
-    grid-column: 1/3;
+.info{
     min-height: 100%;
-    grid-row: 3/4;
     display: flex;
 }
 
-.about .CV .personnal{
-    flex: 0 0 50%;
-    max-width: 50%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows:repeat(5, 1fr);
-    grid-row-gap: 5%;
+.about .info .personnal{
+    width: 50%;
     color: var(--text-black-700);
     padding-left:5%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
 }
 
-.birth{
-    grid-column: 1;
-    grid-row: 1;
-}
-.age{
-    grid-column: 2;
-    grid-row: 1;
-}
-.web{
-    grid-column: 1;
-    grid-row: 2;
-}
-.mail{
-    grid-column: 2;
-    grid-row: 2;
-}
-.phone{
-    grid-column: 1;
-    grid-row: 3;
-}
-.city{
-    grid-column: 2;
-    grid-row: 3;
-}
 .info-item{
     padding-top: 10%;
+    width: 90%;
 }
 .info-item p{
-    max-width: 90%;
+
     font-weight: 600;
-    font-size: 100%;
+    font-size: 110%;
     border-bottom: 2px solid var(--bg-black-50);
 }
 
 .info-item span{
     color: var(--text-black-700);
     font-weight: 400;
-    font-size: 80%;
+    font-size: 90%;
 }
 .button{
-    display: flex;
-    margin-top: 10%;
     grid-row: 5/6;
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .button .btn{
     background: var(--skin-color);
     color: var(--bg-black-900);
     border-radius: 50px;
     text-align: center;
-    width: 50%;
     padding-top: 2%;
     padding-bottom: 2%;
+    width: 25%;
 }
 
 .hire-me{
@@ -135,7 +114,8 @@ body{
 .btn:hover{
     transform: scale(1.05);
 }
-.about .CV .skills{
+.about .info .skills{
+    margin-top: 1%;
     flex: 0 0 50%;
 
 }
@@ -174,42 +154,64 @@ body{
     font-size: 80%;
     color: var(--text-black-700);
 }
-
-.about .education{
-    grid-column: 1/2;
-    grid-row: 4/5;
-    width: 100%;
-}
-.about .experiences{
-    grid-column: 2/3;
-    grid-row: 4/5;
+.cv{
+    margin-top: 8%;
+    display: flex;
 
 }
 
-.about h3.title{
-    font-size: 150%;
-    color: var(--text-black-700);
+.cv .education, .cv .experiences{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     margin-bottom: 15%;
 }
-.timeline-box{
-    flex: 0 0 50%;
-    max-width: 50%;
+
+
+.cv h3.title{
+     font-size: 200%;
+     color: var(--text-black-700);
+     margin-bottom: 10%;
+ }
+.cv i{
+    padding-right: 5%;
+    margin-bottom: 3%;
+}
+.cv h4{
+font-size: 150%;
+    margin-bottom: 3%;
+
 }
 
+.timeline-box{
+    border-radius: 10px;
+    max-width: 75%;
+
+}
+.experiences .timeline{margin-top: -4%}
 .timeline{
+    box-shadow: 0px 1px 17px 0px rgba(0,0,0,0.5);
     background-color: var(--bg-black-100);
     padding: 5% 10%;
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
     width: 100%;
     position: relative;
-}
+    text-align: left;
 
+}
+.timeline-item p{
+    font-size: 100%;
+    text-align: justify;
+}
 .timeline-item
 {
+    width: 100%;
     position: relative;
     padding-left: 5%;
-    padding-bottom: 15%;
+    padding-bottom: 10%;
+    color: var(--text-black-700);
 }
 .timeline-item:last-child{
     padding-bottom: 0;
@@ -228,8 +230,11 @@ body{
     position: absolute;
     height: 20px;
     width: 20px;
-    left: -7.2%;
+    left: -7%;
     top: 0;
     background-color: var(--skin-color);
     border-radius: 50%;
+}
+.experiences .circle-dot{
+    left: -6.5%;
 }
