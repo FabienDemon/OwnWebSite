@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,500&display=swap');
 
 .header{
-    margin: 0;
+    height: 60%;
 
 }
-
 header{
     width: 100%;
     background-color: var(--bg-black-100);
@@ -14,32 +13,31 @@ header{
     right: 0;
     display: grid;
     grid-template-columns: 45% 55%;
+    grid-template-rows: 8% 45% 50%;
 }
 
 header img{
-    position: absolute;
+    opacity: 1;
     z-index: 1;
-    grid-column: 1;
-    height: 75%;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    width: 100%;
 }
 
-header ul {
-    position: absolute;
+header ul.scroll_but{
     z-index: 3;
-    grid-column: 1;
-    width: 45%;
-    height: 8%;
+    grid-column: 1/2;
+    grid-row: 1/2;
     background: var(--bg-black-900);
-    padding-top: 1%;
+    padding-top: 2%;
     padding-left: 1%;
 }
 
 header ul a{
 
+    padding: 2%;
     color: var(--text-black-900);
     font-family: Montserrat;
-    font-size: 120%;
-    padding: 2%;
 }
 header ul a i{
     padding-right: 1%;
@@ -50,17 +48,17 @@ header ul a:hover{
 }
 
 header .text{
+    grid-row: 2/4;
     grid-column: 2;
-    width: 100%;
     z-index: 3;
     text-align: left;
-    height: 75%;
+    padding-bottom: 13%;
+    margin-top: 30%;
 }
 header .text .hi{
     font-size: 300%;
     font-family: 'Montserrat', sans-serif;
     color: var(--text-black-900);
-    margin-top: 40%;
     margin-left: 20%;
 }
 header .text .profession{
