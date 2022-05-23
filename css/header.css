@@ -46,6 +46,7 @@ header ul a i{
 
 header ul a:hover{
     border-bottom: 3px solid var(--skin-color);
+    transition: none;
 }
 
 header .text{
