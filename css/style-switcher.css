@@ -16,8 +16,8 @@
 }
 .style-switcher .s-icon{
     position: absolute;
-    height:33%;
-    width: 17%;
+    height: 35px;
+    width: 35px;
     text-align: center;
     font-size: 140%;
     background: var(--bg-black-100);
@@ -35,7 +35,7 @@
     top: 0;
 }
 .style-switcher .day-night{
-    top:50%;
+    margin-top: 20px;
 }
 
 .style-switcher h4{
@@ -71,4 +71,18 @@
 }
 .style-switcher .color-4{
     background: #f021b2;
+}
+
+.top{
+    margin-top: 5px;
+}
+
+.top button{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background: none;
+    font-size: 100%;
+    color: var(--text-black-900);
 }
