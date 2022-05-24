@@ -28,14 +28,13 @@
     cursor:pointer;
     transition: all 0.3s ease;
     border-radius: 50%;
-    content-align:center;
 }
 
 .style-switcher .style-switch-toggler{
     top: 0;
 }
 .style-switcher .day-night{
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 .style-switcher h4{
