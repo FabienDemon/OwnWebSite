@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <title>Homepage</title>
     <!-- CSS Files -->
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/homepage.css">
     <link href="https://css.gg/css?=|calendar-dates|headset|website" rel="stylesheet">
-    <link rel="stylesheet" href="../css/skin/color-1.css">
+    <link rel="stylesheet" href="css/skin/color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-    <link rel="stylesheet" href="../css/style-switcher.css">
-    <link rel="stylesheet" href="../css/skin/color-1.css" class="alternate-style" title="color-1" disabled>
-    <link rel="stylesheet" href="../css/skin/color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="../css/skin/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="../css/skin/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+    <link rel="stylesheet" href="css/skin/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skin/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skin/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skin/color-4.css" class="alternate-style" title="color-4" disabled>
 </head>
 
 <body >
     <section class="header" id="top">
         <header>
-            <img class="me" src="../img/pp.jpg">
+            <img class="me" src="img/pp.jpg">
             <ul class="scroll_but">
-                <a href="homepage.html"><i class="fa fa-home"></i>Home</a>
+                <a href="index.html"><i class="fa fa-home"></i>Home</a>
                 <a href="#aboutme"><i class="fa fa-user"></i>About</a>
                 <a href="#services"><i class="fa fa-list"></i>Services</a>
                 <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
@@ -208,14 +208,14 @@
             <h1>Services</h1>
             <div class="bubbles">
                 <div class="bulle first">
-                    <a href="homepage.html">
+                    <a href="index.html">
                         <i class="fa-solid fa-code"></i>
                         <h3 class="service">Web Design</h3>
                         <h4 class="count">4 projects</h4>
                     </a>
                 </div>
                 <div class="bulle second">
-                    <a href="homepage.html">
+                    <a href="index.html">
                         <i class="fa-solid fa-headphones"></i>
                         <h3 class="service">Sound </h3>
                         <h3 class="service">Editing / Mastering </h3>
@@ -232,8 +232,8 @@
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <div class="slide-content">
-                        <img class="web" src="../img/portefolio/img.png">
-                        <img class="responsive" src="../img/portefolio/img_1.png">
+                        <img class="web" src="img/portefolio/img.png">
+                        <img class="responsive" src="img/portefolio/img_1.png">
                         <p class="description">This is a awesome project
                             zerbfp iarh ezrm azerî f^zroznm rao z</p>
                     </div>
@@ -242,8 +242,8 @@
 
                 <div class="mySlides fade">
                     <div class="slide-content">
-                        <img class="web" src="../img/portefolio/img.png">
-                        <img class="responsive" src="../img/portefolio/img_1.png">
+                        <img class="web" src="img/portefolio/img.png">
+                        <img class="responsive" src="img/portefolio/img_1.png">
                         <p class="description">This is a awesome project
                         konitgz oinzr zergn iop zre</p>
                     </div>
@@ -253,8 +253,8 @@
 
                 <div class="mySlides fade">
                     <div class="slide-content">
-                        <img class="web" src="../img/portefolio/img.png">
-                        <img class="responsive" src="../img/portefolio/img_1.png">
+                        <img class="web" src="img/portefolio/img.png">
+                        <img class="responsive" src="img/portefolio/img_1.png">
                         <p class="description">This is a awesome project
                             azefagaioh azegf azge agzpi^hi af</p>
                     </div>
@@ -277,12 +277,12 @@
         <section class="contact" id="contact">
             <h1> Contact Me</h1>
             <div class="contact-container">
-                <form onsubmit="sendEmail();reset();return false">
-                    <input type="text" class="lastname" id="lastname" placeholder="Lastname" required>
-                    <input type="text" class="firstname"  id="firstname" placeholder="Firstname" required>
-                    <input type="text" class="subject"  id="subject" placeholder="Subject" required>
-                    <input type="text" class="email" id="email" placeholder="E-mail" required>
-                    <textarea id="message" rows="4" placeholder="Type Your Message"></textarea>
+                <form action="https://formspree.io/f/xwkyyvvv" method="post">
+                    <input type="text" class="lastname"  name="lastname" id="lastname" placeholder="Lastname" required>
+                    <input type="text" class="firstname"  name="firstname" id="firstname" placeholder="Firstname" required>
+                    <input type="text" class="email" name="email" id="email" placeholder="E-mail" required>
+                    <input type="text" class="subject" name="subject" id="subject" placeholder="Subject" required>
+                    <textarea name="message" id="message" rows="4" placeholder="Type Your Message"></textarea>
                     <button type="submit">Send</button>
                 </form>
                 <div class="contact-info">
@@ -305,10 +305,10 @@
 
 
 <!-- JS Files -->
-<script src="../js/style-switcher.js"></script>
-<script src="../js/dark-theme.js"></script>
-<script src="../js/slideShow.js"></script>
+<script src="js/style-switcher.js"></script>
+<script src="js/dark-theme.js"></script>
+<script src="js/slideShow.js"></script>
 <!-- send Email -->
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="../js/sendEmail.js"></script>
+<script src="js/sendEmail.js"></script>
 </html>
