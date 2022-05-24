@@ -35,7 +35,7 @@ header ul.scroll_but{
 header ul a{
     width: 15%;
     height: 50%;
-    font-size: 120%;
+    font-size: 100%;
     color: var(--text-black-900);
     font-family: Montserrat;
     transition: 2s  ease;
