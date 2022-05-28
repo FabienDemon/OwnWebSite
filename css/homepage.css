@@ -622,6 +622,7 @@ form input:focus{
         grid-column: 2/3;
     }
     .info-item p{
+
         font-size: 60%;
         width: 100%;
     }
@@ -676,6 +677,7 @@ form input:focus{
     }
     .timeline-item p{
         font-size: 60%;
+        text-align: left;
     }
     .timeline-item
     {
@@ -821,4 +823,77 @@ form input:focus{
         padding-right: 5%;
     }
 
+}
+
+@media screen and (max-width: 320px) {
+    .body{
+        margin-top: 5%;
     }
+    .body h1{
+        font-size: 200%;
+    }
+    .about pre{
+
+        font-size: 50%;
+
+    }
+
+    .info-item p{
+        font-size: 40%;
+
+    }
+    .info-item span{
+        font-size: 40%;
+    }
+
+    .button .btn{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-size: 50%;
+    }
+
+.education h4, .experiences h4{
+    font-size: 65%;
+}
+
+.education h3, .experiences h3{
+    font-size: 60%;
+}
+
+
+.education p, .experiences p{
+    font-size: 45%;
+}
+
+
+    /* ===== Contact ===== */
+
+    .contact h1{
+        font-size: 200%;
+    }
+    form input{
+        font-size: 60%;
+    }
+    textarea{
+        grid-row:4/5;
+        border: 2px solid var(--skin-color);
+        color: var(--text-black-700);
+        font-size: 60%;
+        height: 100%;
+    }
+    form button{
+        font-size: 50%;
+        grid-row: 5/6;
+    }
+
+    .contact-info a{
+        font-size: 15%;
+        padding: 5%;
+        text-decoration: none;
+        color: var(--bg-black-50);
+    }
+
+    .contact-info a i{
+        padding-right:2%;
+    }
+}

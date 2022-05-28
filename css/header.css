@@ -61,7 +61,7 @@ header img{
     height: auto;
 }
 
-@media screen and (max-width: 912px){
+@media screen and (max-width: 912px)and (min-width: 281px){
     header{
         overflow: hidden;
     }
@@ -76,6 +76,21 @@ header img{
     }
     header img{
         grid-row: 2/3;
-        overflow-clip: this;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    header  ul{
+        font-size: 5%;
+    }
+    header ul a i{
+        padding-right:0 ;
+    }
+    header .text .hi{
+        font-size:60%;
+    }
+    header .text .profession{
+        font-size:15%;
     }
 }
